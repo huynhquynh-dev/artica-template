@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topheader {
+    background: $backgroundColor;
+    color: $textColor;
+    height: 40px;
+    line-height: 40px;
+
+    .mangxh {
+
+        a {
+            color: $textColor;
+        }
+        
+    }
+    .datban {
+
+    }
+}
