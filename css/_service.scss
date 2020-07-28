@@ -1,0 +1,58 @@
+.service {
+    font-family: $fontDefault;    
+    text-align: center;
+    .title {
+        margin: auto;
+        margin-top: 110px;
+        margin-bottom: 30px;
+        h2 {
+            font-weight: 700;
+            font-size: 38px;            
+            color: #feb518;
+        }
+        p {
+            font-weight: 700;
+            font-size: 26px;
+            color: #333333;
+        }
+    }
+    .card-deck {
+        .card {
+            border: none;
+
+            img.card-img-top {
+                width: 45%;
+                margin: auto;
+            }
+            .card-body {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    
+                    h4.card-title {
+                        color: #333333;
+                        font-size: 22px;
+                        margin-top: 5px;
+                    } 
+                }
+                p.card-text {
+                    color: #777777;
+                    font-size: 14px;
+                    margin-top: 12px;
+                }
+                a.read-more {
+                    font-size: 14px;
+                    color: #feb518;
+                    text-decoration: none;
+                    cursor: pointer;
+                    margin-top: 16px;
+                    transition: all 300ms ease;
+
+                    &:hover {
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,22 +1,37 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: $fontDefault;
 }
 
 .topheader {
     background: $backgroundColor;
-    color: $textColor;
+    color: $colorDefault;
     height: 40px;
     line-height: 40px;
 
     .mangxh {
-
         a {
-            color: $textColor;
+            color: $colorPrimary;
+            font-size: $fontSizeDefault;
+            padding: 0 13px;
+
+            &:nth-child(1) {
+                padding-left: 0;
+            }
         }
-        
     }
     .datban {
-
+        border-left: 1px solid $colorPrimary;
+        float: left;
+        margin-left: 17px;
+        padding-left: 25px;
+        font-family: $fontDefault;
+        font-size: 13px;
+        color: $colorPrimary;
+    }
+    .datban.openingtop {
+        border-right: 1px solid $colorPrimary;
+        padding-right: 26px;
     }
 }

@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .topheader {
@@ -13,8 +14,231 @@
 }
 
 .topheader .mangxh a {
-  color: white;
+  color: #dddddd;
+  font-size: 12px;
+  padding: 0 13px;
+}
+
+.topheader .mangxh a:nth-child(1) {
+  padding-left: 0;
+}
+
+.topheader .datban {
+  border-left: 1px solid #dddddd;
+  float: left;
+  margin-left: 17px;
+  padding-left: 25px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 13px;
+  color: #dddddd;
+}
+
+.topheader .datban.openingtop {
+  border-right: 1px solid #dddddd;
+  padding-right: 26px;
 }
 
 /*------------------------- Header ---------------------------*/
+.header ul li.nav-item {
+  text-transform: capitalize;
+}
+
+.header ul li.nav-item a.nav-link {
+  color: #777777;
+  font-size: 14px;
+  margin-top: 43;
+  padding: 12px 15px;
+}
+
+.header ul li.nav-item a.nav-link:hover {
+  background-color: #dddddd;
+}
+
+.header ul li.nav-item:last-child a.nav-link {
+  background-color: #feb518;
+  border-radius: 0;
+  font-size: 13px;
+  color: black;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}
+
+.header ul li.nav-item:last-child a.nav-link:hover {
+  background-color: #a57b00;
+}
+
+/*------------------------- Slide ---------------------------*/
+.slide-home .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.slide-home .carousel-inner .carousel-item {
+  width: 100%;
+  height: 600px;
+}
+
+.slide-home .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide p {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  width: 900px;
+  padding: 15px 0;
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide a.buttonSlide {
+  display: none;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  width: 165px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide.iconSlide {
+  top: 50%;
+  left: 12%;
+  text-align: left;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+}
+
+.slide-home .carousel-inner .carousel-item .textSlide.iconSlide img {
+  width: 20%;
+}
+
+/*------------------------- Service ---------------------------*/
+.service {
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+}
+
+.service .title {
+  margin: auto;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.service .title h2 {
+  font-weight: 700;
+  font-size: 38px;
+  color: #feb518;
+}
+
+.service .title p {
+  font-weight: 700;
+  font-size: 26px;
+  color: #333333;
+}
+
+.service .card-deck .card {
+  border: none;
+}
+
+.service .card-deck .card img.card-img-top {
+  width: 45%;
+  margin: auto;
+}
+
+.service .card-deck .card .card-body a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service .card-deck .card .card-body a h4.card-title {
+  color: #333333;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.service .card-deck .card .card-body p.card-text {
+  color: #777777;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.service .card-deck .card .card-body a.read-more {
+  font-size: 14px;
+  color: #feb518;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 16px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service .card-deck .card .card-body a.read-more:hover {
+  color: #333333;
+}
+
+/*------------------------- Header ---------------------------*/
+@media (max-width: 576px) {
+  .topheader {
+    height: auto;
+  }
+  .topheader .datban {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .topheader .datban.openingtop {
+    display: none;
+  }
+  .header ul li.nav-item a.nav-link {
+    text-align: center;
+    border-bottom: 1px dashed #dddddd;
+    padding: 10px 0;
+  }
+  .header ul li.nav-item a.nav-link:last-child {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+  }
+  .slide-home .carousel-inner .carousel-item {
+    width: 100%;
+    height: 200px;
+  }
+  .slide-home .carousel-inner .carousel-item .textSlide {
+    display: none;
+  }
+  .service .title h2 {
+    font-size: 32px;
+  }
+  .service .title p {
+    font-size: 22px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */

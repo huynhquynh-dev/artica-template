@@ -9,19 +9,21 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap"
+		rel="stylesheet">
 
-	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendor/font-awesome.css">
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
 	<!-- Begin TopHeader -->
-	<div class="topheader">
+	<section class="topheader">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="mangxh float-xs-left">
+					<div class="mangxh float-sm-left text-sm-left text-center">
 						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
 						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
 						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></i></a>
@@ -30,18 +32,166 @@
 					<div class="datban"> Call for reservation: +011 29 345 678</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="datban openingtop float-xs-right">Opening Hours : 9:00am - 10:00pm</div>
-
+					<div class="datban openingtop float-sm-right text-sm-right text-center">Opening Hours : 9:00am -
+						10:00pm</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- End TopHeader -->
+
+	<!-- Begin Header -->
+	<section class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light">
+				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+					data-target="#headerMenuId" aria-controls="headerMenuId" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="headerMenuId">
+					<!-- Create another <ul class="navbar-nav ml-auto"> for the navbar items you want on the right. ml-auto will pull your navbar-nav to the right where mr-auto will pull it to the left.					 -->
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Reservation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">shop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn btn-warning" href="#">Reservation</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</section>
+	<!-- End Header -->
+
+	<!-- Begin Slide -->
+	<section class="slide-home">
+		<div id="slideHomeId" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slideHomeId" data-slide-to="0" class="active"></li>
+				<li data-target="#slideHomeId" data-slide-to="1"></li>
+				<li data-target="#slideHomeId" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="textSlide">
+						<h2>The Delicous Food Tasts</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium </p>
+						<a href="#" class="buttonSlide btn btn-warning">Buy now</a>
+					</div>
+					<img src="images/image-1.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<div class="textSlide">
+						<h2>The Delicous Food Tasts</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium </p>
+						<a href="#" class="buttonSlide btn btn-warning">Buy now</a>
+					</div>
+					<img src="images/image-2.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<div class="textSlide iconSlide">
+						<img src="images/icon-slide-1.png" alt="icon-slide">
+						<h2>The Delicous Food Tasts</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium </p>
+						<a href="#" class="buttonSlide btn btn-warning">Buy now</a>
+					</div>
+					<img src="images/image-3.jpg" alt="First slide">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#slideHomeId" role="button" data-slide="prev">
+				<div class="button-slide">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</div>
+			</a>
+			<a class="carousel-control-next" href="#slideHomeId" role="button" data-slide="next">
+				<div class="button-slide">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</div>				
+			</a>
+		</div>
+	</section>
+	<!-- End Slide -->
+
+	<!-- Begin Services -->
+	<section class="service">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2>Our Services</h2>
+					<p>We Create Delicous Memory</p>
+				</div>
+				<div class="card-deck">
+					<div class="card">
+						<img class="card-img-top" src="images/services-1.png" alt="">
+						<div class="card-body">
+							<a href="#"><h4 class="card-title">Pan Pizza</h4></a>
+							<p class="card-text">Vivamus sed fermentum tellus. Donec quis elit sapien. Aliquam commodo tortor nisi, nec varius mi finibus at. ut ullamcorper volutpat lectusu</p>
+							<a href="#" class="read-more">Read more</a>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="images/services-2.png" alt="">
+						<div class="card-body">
+							<a href="#"><h4 class="card-title">Burger</h4></a>
+							<p class="card-text">Vivamus sed fermentum tellus. Donec quis elit sapien. Aliquam commodo tortor nisi, nec varius mi finibus at. ut ullamcorper volutpat lectusu</p>
+							<a href="#" class="read-more">Read more</a>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="images/services-3.png" alt="">
+						<div class="card-body">
+							<a href="#"><h4 class="card-title">Fish</h4></a>
+							<p class="card-text">Vivamus sed fermentum tellus. Donec quis elit sapien. Aliquam commodo tortor nisi, nec varius mi finibus at. ut ullamcorper volutpat lectusu</p>
+							<a href="#" class="read-more">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services -->
+
 
 	<!-- Begin TopHeader -->
 	<!-- End TopHeader -->
 
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="custom.js"></script>
 </body>
 
