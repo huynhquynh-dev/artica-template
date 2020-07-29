@@ -151,6 +151,7 @@
 }
 
 .service .title h2 {
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-size: 38px;
   color: #feb518;
@@ -202,6 +203,162 @@
   color: #333333;
 }
 
+/*------------------------- Menu Home ---------------------------*/
+.menu-home .menu-option {
+  color: white;
+  background: url(../images/background-menu-hone.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-home .menu-option .title-menu {
+  display: table;
+  margin: auto;
+  height: 550px;
+}
+
+.menu-home .menu-option .title-menu .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-home .menu-option .title-menu .container .title-item {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  max-width: 100%;
+}
+
+.menu-home .menu-option .title-menu .container .title-item .title-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  color: #feb518;
+}
+
+.menu-home .menu-option .title-menu .container .title-item h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+.menu-home .menu-item .menu-item-title {
+  height: 80px;
+  line-height: 80px;
+  margin-top: -90px;
+}
+
+.menu-home .menu-item .menu-item-title ul.menu-title-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: auto;
+}
+
+.menu-home .menu-item .menu-item-title ul.menu-title-list li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.menu-home .menu-item .menu-item-title ul.menu-title-list li a {
+  text-decoration: none;
+}
+
+.menu-home .menu-item .menu-item-content {
+  margin-top: 100px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row {
+  padding-right: 15px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image {
+  position: relative;
+  width: 100%;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a .new-food {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 11px;
+  color: black;
+  background-color: #feb518;
+  padding: 2px 7px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a img {
+  width: 90px;
+  background-size: cover;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 {
+  padding-left: 18;
+  padding-right: 18;
+  display: table;
+  height: 90px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top a b {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top span.dot {
+  color: #999999;
+  font-size: 14px;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top span.price {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-bottom {
+  color: #aaaaaa;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 6px;
+}
+
 /*------------------------- Header ---------------------------*/
 @media (max-width: 576px) {
   .topheader {
@@ -239,6 +396,69 @@
   }
   .service .title p {
     font-size: 22px;
+  }
+  .menu-home .menu-option .title-menu {
+    height: 300px;
+  }
+  .menu-home .menu-option .title-menu .container .title-item .title-text {
+    font-size: 30px;
+  }
+  .menu-home .menu-option .title-menu .container .title-item h3 {
+    font-size: 24px;
+  }
+  .menu-home .menu-item .menu-item-title {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 0px;
+  }
+  .menu-home .menu-item .menu-item-title ul.menu-title-list li {
+    list-style: none;
+    padding: 8px 18px;
+  }
+  .menu-home .menu-item .menu-item-content {
+    margin-top: 40px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image {
+    position: relative;
+    width: 100%;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a .new-food {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a img {
+    width: 60px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 60px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top a b {
+    font-size: 18px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top span.dot {
+    display: none;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-top span.price {
+    font-size: 14px;
+  }
+  .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-bottom {
+    font-size: 14px;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=custom.css.map */

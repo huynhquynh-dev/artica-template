@@ -59,4 +59,102 @@
             }
         }
     }
+
+    .menu-home {
+        .menu-option {
+            .title-menu {
+                height: 300px;
+    
+                .container {
+                    .title-item {
+                        .title-text {
+                            font-size: 30px;
+                        }
+                        h3 {
+                            font-size: 24px;
+                        }
+                    }            
+                }
+            }
+        }
+
+        .menu-item {
+            .menu-item-title {
+                height: 60px; 
+                line-height: 60px;  
+                margin-top: 0px;     
+    
+                ul.menu-title-list { 
+    
+                    li {                    
+                        list-style: none;
+                        padding: 8px 18px;
+                        a {
+                            
+                        }
+                    }
+                }
+            }
+    
+            .menu-item-content {            
+                margin-top: 40px;
+                
+                .one-food{
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 20px;
+    
+                    .row {
+                        padding-left: 20px;
+                        padding-right: 20px;
+    
+                        .col-3.col-sm-2 {
+                            padding-left: 0;
+                            padding-right: 0;
+    
+                            .food-image {
+                                position: relative;  
+                                width: 100%;               
+            
+                                a {
+                                    .new-food {
+                                        font-size: 8px;
+                                        padding: 1px 4px;
+                                    }
+                                    img {
+                                        width: 60px;
+                                    }
+                                }
+                            }
+                        }
+                        .col-9.col-sm-10 {
+                            padding-left: 0px;
+                            padding-right: 0px;                            
+                            height: 60px;
+    
+                            .food-content {
+                                .food-content-top {              
+                                    a {
+                                        b {
+                                            font-size: 18px;
+                                        }                                    
+                                    }
+                                    span.dot {
+                                        display: none;
+                                    }
+                                    span.price {
+                                        font-size: 14px;
+                                    }
+                                }
+                                .food-content-bottom {
+                                    font-size: 14px;
+                                    margin-top: 0;
+                                }
+                            }
+                        }                    
+                    }
+                }
+            }
+        }
+    }
 }
