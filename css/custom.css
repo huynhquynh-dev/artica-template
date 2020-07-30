@@ -206,19 +206,37 @@
 /*------------------------- Menu Home ---------------------------*/
 .menu-home {
   margin-top: 110px;
+  position: relative;
 }
 
 .menu-home .menu-option {
+  position: relative;
   color: white;
-  background: url(../images/background-menu-hone.jpg) no-repeat;
+  background-image: url(../images/background-menu-hone.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.menu-home .menu-option:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 13, 0.5);
+  z-index: 1000;
 }
 
 .menu-home .menu-option .title-menu {
   display: table;
   margin: auto;
   height: 550px;
+  position: relative;
+  z-index: 1010;
 }
 
 .menu-home .menu-option .title-menu .container {
@@ -243,6 +261,11 @@
   font-family: "Roboto Slab", sans-serif;
   font-size: 36px;
   color: white;
+}
+
+.menu-home .menu-item {
+  position: relative;
+  z-index: 1030;
 }
 
 .menu-home .menu-item .menu-item-title {
@@ -370,10 +393,13 @@
 
 /*------------------------- Slide List Menu ---------------------------*/
 .slide-list-menu {
+  position: relative;
   margin-top: 110px;
-  background: url(/images/background-slide-menu-hone.jpg);
+  background-image: url(/images/background-slide-menu-hone.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .slide-list-menu .background-black {
@@ -477,6 +503,127 @@
   background-color: rgba(254, 181, 24, 0.3);
 }
 
+/*------------------------- About Chef Home ---------------------------*/
+.about-chef-home {
+  background-image: url(../images/background-about-chef.png);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  padding-top: 35px;
+}
+
+.about-chef-home img {
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  display: block;
+}
+
+.about-chef-home .info-chef {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #777777;
+  margin-top: 230px;
+}
+
+.about-chef-home .info-chef .info-chef-title {
+  margin-bottom: 15px;
+}
+
+.about-chef-home .info-chef .info-chef-title h2.title-chef {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.about-chef-home .info-chef .info-chef-title span.caption-chef {
+  font-family: "Dancing Script", cursive;
+  font-size: 31px;
+  font-weight: 700;
+  color: #feb518;
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.about-chef-home .info-chef p.description-chef {
+  margin: 0;
+  padding: 0;
+}
+
+.about-chef-home .info-chef ul.social-icon-chef {
+  margin-top: 35px;
+}
+
+.about-chef-home .info-chef ul.social-icon-chef li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+}
+
+.about-chef-home .info-chef ul.social-icon-chef li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #333333;
+}
+
+/*------------------------- Slogan ---------------------------*/
+.slogan-home {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/background-slogan-home.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 222px 0;
+}
+
+.slogan-home:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 13, 0.5);
+}
+
+.slogan-home .col-12 {
+  position: relative;
+  z-index: 1010;
+  text-align: center;
+}
+
+.slogan-home .col-12 span {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  color: #feb518;
+}
+
+.slogan-home .col-12 h4 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
 /*------------------------- Responsive ---------------------------*/
 @media (max-width: 576px) {
   .topheader {
@@ -525,10 +672,11 @@
     height: 300px;
   }
   .menu-home .menu-option .title-menu .container .title-item .title-text {
-    font-size: 30px;
+    font-size: 28px;
   }
   .menu-home .menu-option .title-menu .container .title-item h3 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 10px;
   }
   .menu-home .menu-item .menu-item-title {
     height: 60px;
@@ -618,6 +766,16 @@
   .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .description-product {
     font-size: 9px;
     text-align: center;
+  }
+  .about-chef-home .info-chef {
+    margin-top: 40px;
+  }
+  .slogan-home .col-12 span {
+    font-size: 28px;
+  }
+  .slogan-home .col-12 h4 {
+    font-size: 20px;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=custom.css.map */

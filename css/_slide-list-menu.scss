@@ -1,8 +1,12 @@
 .slide-list-menu {
+    position: relative;
     margin-top: 110px;
-    background: url(/images/background-slide-menu-hone.jpg);
+    background-image: url(/images/background-slide-menu-hone.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
     
     .background-black {
         background-color: rgba($color: #000000, $alpha: .8);

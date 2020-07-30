@@ -1,0 +1,38 @@
+.slogan-home {
+    position: relative;
+    width: 100%;
+    background-image: url(../images/background-slogan-home.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 222px 0;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        width: 100%;
+        height: 100%;        
+        background-color: rgba(13,13,13,0.5);
+    }
+    .col-12 {
+        position: relative;
+        z-index: 1010;
+        text-align: center;
+
+        span {
+            font-family: $fontSecondary;
+            font-size: 38px;
+            color: #feb518;
+        }
+        h4 {
+            font-family: $fontDefault;
+            font-size: 36px;
+            color: white;
+        }
+    }    
+}

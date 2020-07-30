@@ -32,11 +32,6 @@
     }
 
     .slide-home {
-        .carousel-indicators {
-            li {
-                
-            }
-        }
         .carousel-inner {
             .carousel-item {            
                 width: 100%;
@@ -72,10 +67,11 @@
                 .container {
                     .title-item {
                         .title-text {
-                            font-size: 30px;
+                            font-size: 28px;
                         }
                         h3 {
-                            font-size: 24px;
+                            font-size: 20px;
+                            margin-top: 10px;
                         }
                     }            
                 }
@@ -182,10 +178,7 @@
                     .carousel-item {
                         .product {
                             padding: 0 5px;
-        
-                            img {
-                                
-                            }
+    
                             .title-product {                                                          
                                 font-size: 12px;                
     
@@ -207,19 +200,25 @@
                         }
                     }
                 }
-                .carousel-control-prev {     
-                    .carousel-control-prev-icon {
-                    }
-                    &:hover {
-                    }
-                }
-                .carousel-control-next {     
-                    .carousel-control-next-icon {
-                    }
-                    &:hover {                    
-                    }
-                }
             }
         }
+    }
+
+    .about-chef-home {
+        .info-chef {
+            margin-top: 40px;
+        }
+    }
+
+    .slogan-home {        
+        .col-12 {
+            span {
+                font-size: 28px;
+            }
+            h4 {            
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }    
     }
 }

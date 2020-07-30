@@ -1,0 +1,74 @@
+.about-chef-home {
+    background-image: url(../images/background-about-chef.png);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    padding-top: 35px;
+
+    img {
+        max-width: 100%;
+        position: relative;
+        height: auto;
+        display: block;
+    }
+
+    .info-chef {
+        font-family: $fontDefault;
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+        margin-top: 230px;
+
+        .info-chef-title {
+            margin-bottom: 15px;
+
+            h2.title-chef {
+                font-size: 30px;
+                font-weight: 400;
+                color: #333333;
+                text-transform: capitalize;
+                margin: 0;
+                padding: 0;
+            }
+            span.caption-chef {
+                font-family: $fontSecondary;
+                font-size: 31px;
+                font-weight: 700;
+                color: #feb518;
+                text-transform: capitalize;            
+                padding: 0;
+            }
+        }        
+        p.description-chef {
+            margin: 0;
+            padding: 0;
+        }
+        ul.social-icon-chef {
+            margin-top: 35px;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 8px;
+                position: relative;
+            
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    font-size: 14px;
+                    color: white;
+                    display: inline-block;
+                    width: 38px;
+                    height: 38px;
+                    line-height: 36px;
+                    text-align: center;
+                    border-radius: 2px;
+                    background-color: #333333;
+                }
+            }
+        }
+    }
+}

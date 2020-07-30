@@ -1,16 +1,34 @@
 .menu-home {
     margin-top: 110px;
-    
+    position: relative;
+
     .menu-option {
+        position: relative;
         color: white;
-        background: url(../images/background-menu-hone.jpg) no-repeat;
+        background-image: url(../images/background-menu-hone.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;  
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(13,13,13,0.5);
+            z-index: 1000;
+        }
 
         .title-menu {
             display: table;
             margin: auto;
             height: 550px;
+            position: relative;
+            z-index: 1010;
 
             .container {
                 display: table-cell;
@@ -36,6 +54,9 @@
     }
 
     .menu-item {
+        position: relative;
+        z-index: 1030;
+
         .menu-item-title {
             height: 80px; 
             line-height: 80px;  
