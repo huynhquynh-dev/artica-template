@@ -37,7 +37,7 @@
         .menu-item-title {
             height: 80px; 
             line-height: 80px;  
-            margin-top: -90px;        
+            margin-top: -90px;                   
 
             ul.menu-title-list { 
                 display: inline-flex;
@@ -49,17 +49,23 @@
 
                     a {
                         text-decoration: none;
+                        color: white; 
                     }
-                }
+                } 
+                li.active {
+                    a {
+                        color: #feb518;
+                    }                        
+                }               
             }
         }
 
-        .menu-item-content {            
+        .menu-item-content { 
+            position: relative;           
             margin-top: 100px;
             
             .one-food{
-                width: 90px;
-                height: 90px;
+                width: 100%;
                 margin-bottom: 20px;
 
                 .row {
@@ -88,7 +94,7 @@
                                     padding: 2px 7px;
                                 }
                                 img {
-                                    width: 90px;
+                                    width: 100%;
                                     background-size: cover;
                                 }
                             }

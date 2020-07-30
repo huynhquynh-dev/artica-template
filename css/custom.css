@@ -261,15 +261,20 @@
 
 .menu-home .menu-item .menu-item-title ul.menu-title-list li a {
   text-decoration: none;
+  color: white;
+}
+
+.menu-home .menu-item .menu-item-title ul.menu-title-list li.active a {
+  color: #feb518;
 }
 
 .menu-home .menu-item .menu-item-content {
+  position: relative;
   margin-top: 100px;
 }
 
 .menu-home .menu-item .menu-item-content .one-food {
-  width: 90px;
-  height: 90px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -304,7 +309,7 @@
 }
 
 .menu-home .menu-item .menu-item-content .one-food .row .col-3.col-sm-2 .food-image a img {
-  width: 90px;
+  width: 100%;
   background-size: cover;
 }
 
@@ -359,7 +364,7 @@
   margin-top: 6px;
 }
 
-/*------------------------- Header ---------------------------*/
+/*------------------------- Responsive ---------------------------*/
 @media (max-width: 576px) {
   .topheader {
     height: auto;
@@ -415,12 +420,13 @@
     list-style: none;
     padding: 8px 18px;
   }
+  .menu-home .menu-item .menu-item-title ul.menu-title-list li a {
+    color: black;
+  }
   .menu-home .menu-item .menu-item-content {
     margin-top: 40px;
   }
   .menu-home .menu-item .menu-item-content .one-food {
-    width: 60px;
-    height: 60px;
     margin-bottom: 20px;
   }
   .menu-home .menu-item .menu-item-content .one-food .row {

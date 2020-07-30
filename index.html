@@ -212,18 +212,18 @@
 			<div class="menu-item-title">
 				<div class="container text-center">
 					<ul class="menu-title-list">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Breakfast</a></li>
-						<li><a href="#">Lunch</a></li>
-						<li><a href="#">Dinner</a></li>
+						<li data-food="*" class="active"><a href="#">All</a></li>
+						<li data-food=".breakfast"><a href="#">Breakfast</a></li>
+						<li data-food=".lunch"><a href="#">Lunch</a></li>
+						<li data-food=".dinner"><a href="#">Dinner</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="menu-item-content">
 				<div class="container">
-					<div class="row">
+					<div class="row group-menu-home">
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food dinner">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -247,7 +247,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food breakfast">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -271,7 +271,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food lunch">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -295,7 +295,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food dinner">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -319,7 +319,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food breakfast">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -343,7 +343,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food lunch">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -367,7 +367,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food dinner">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -391,7 +391,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food breakfast">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -415,7 +415,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food lunch">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -439,7 +439,7 @@
 						</div>
 						<!-- End One Food -->
 						<!-- One Food -->
-						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 one-food dinner">
 							<div class="row">
 								<div class="col-3 col-sm-2">
 									<div class="food-image">
@@ -477,7 +477,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<script src="vendor/isotope.pkgd.min.js" ></script>
+	<script src="vendor/imagesloaded.pkgd.min.js" ></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>
