@@ -49,7 +49,9 @@
         }
     }
 
-    .service {
+    .service-home {
+        margin-top: 60px;
+
         .title {
             h2 {
                 font-size: 32px;  
@@ -61,6 +63,8 @@
     }
 
     .menu-home {
+        margin-top: 60px;
+        
         .menu-option {
             .title-menu {
                 height: 300px;
@@ -150,6 +154,69 @@
                                 }
                             }
                         }                    
+                    }
+                }
+            }
+        }
+    }
+
+    .slide-list-menu {
+        margin-top: 60px;
+        
+        .background-black {
+            .col-sm-12 {            
+                h4 {        
+                    padding-left: 15px;            
+                    font-size: 20px;
+                }
+            }
+        
+            .carousel.slide {
+                margin-left: 15px;
+                margin-right: 15px;
+
+                .carousel-indicators {
+                    display: none;
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .product {
+                            padding: 0 5px;
+        
+                            img {
+                                
+                            }
+                            .title-product {                                                          
+                                font-size: 12px;                
+    
+                                .name-product {                                    
+                                    text-align: center;                                    
+                                }
+                                span {
+                                    float: none;
+                                    display: inline-block;                                              
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-top: 10px;
+                                }
+                            }
+                            .description-product {
+                                font-size: 9px;
+                                text-align: center;                            
+                            }
+                        }
+                    }
+                }
+                .carousel-control-prev {     
+                    .carousel-control-prev-icon {
+                    }
+                    &:hover {
+                    }
+                }
+                .carousel-control-next {     
+                    .carousel-control-next-icon {
+                    }
+                    &:hover {                    
                     }
                 }
             }

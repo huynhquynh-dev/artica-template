@@ -1,9 +1,10 @@
-.service {
+.service-home {
     font-family: $fontDefault;    
     text-align: center;
+    margin-top: 110px;
+    
     .title {
-        margin: auto;
-        margin-top: 110px;
+        margin: auto;        
         margin-bottom: 30px;
         h2 {
             font-family: $fontSecondary;

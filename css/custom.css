@@ -139,57 +139,57 @@
 }
 
 /*------------------------- Service ---------------------------*/
-.service {
+.service-home {
   font-family: "Roboto Slab", sans-serif;
   text-align: center;
+  margin-top: 110px;
 }
 
-.service .title {
+.service-home .title {
   margin: auto;
-  margin-top: 110px;
   margin-bottom: 30px;
 }
 
-.service .title h2 {
+.service-home .title h2 {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-size: 38px;
   color: #feb518;
 }
 
-.service .title p {
+.service-home .title p {
   font-weight: 700;
   font-size: 26px;
   color: #333333;
 }
 
-.service .card-deck .card {
+.service-home .card-deck .card {
   border: none;
 }
 
-.service .card-deck .card img.card-img-top {
+.service-home .card-deck .card img.card-img-top {
   width: 45%;
   margin: auto;
 }
 
-.service .card-deck .card .card-body a {
+.service-home .card-deck .card .card-body a {
   text-decoration: none;
   cursor: pointer;
 }
 
-.service .card-deck .card .card-body a h4.card-title {
+.service-home .card-deck .card .card-body a h4.card-title {
   color: #333333;
   font-size: 22px;
   margin-top: 5px;
 }
 
-.service .card-deck .card .card-body p.card-text {
+.service-home .card-deck .card .card-body p.card-text {
   color: #777777;
   font-size: 14px;
   margin-top: 12px;
 }
 
-.service .card-deck .card .card-body a.read-more {
+.service-home .card-deck .card .card-body a.read-more {
   font-size: 14px;
   color: #feb518;
   text-decoration: none;
@@ -199,11 +199,15 @@
   transition: all 300ms ease;
 }
 
-.service .card-deck .card .card-body a.read-more:hover {
+.service-home .card-deck .card .card-body a.read-more:hover {
   color: #333333;
 }
 
 /*------------------------- Menu Home ---------------------------*/
+.menu-home {
+  margin-top: 110px;
+}
+
 .menu-home .menu-option {
   color: white;
   background: url(../images/background-menu-hone.jpg) no-repeat;
@@ -364,6 +368,115 @@
   margin-top: 6px;
 }
 
+/*------------------------- Slide List Menu ---------------------------*/
+.slide-list-menu {
+  margin-top: 110px;
+  background: url(/images/background-slide-menu-hone.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-list-menu .background-black {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-list-menu .background-black .col-sm-12 h4 {
+  color: white;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 24px;
+  padding: 35px 0;
+  margin-left: -15px;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-indicators {
+  display: none;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: normal;
+  width: 20%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 7px;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product img {
+  width: 100%;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product {
+  font-size: 16px;
+  margin: 0;
+  padding-top: 10px;
+  color: white;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product .name-product {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product span {
+  float: right;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .description-product {
+  font-size: 13px;
+  color: #777777;
+  padding-top: 10px;
+  margin-bottom: 68px;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-prev {
+  position: absolute;
+  top: -70px;
+  right: 40px;
+  left: auto;
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-prev .carousel-control-prev-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-prev:hover {
+  background-color: rgba(254, 181, 24, 0.3);
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-next {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-next .carousel-control-next-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.slide-list-menu .background-black .carousel.slide .carousel-control-next:hover {
+  background-color: rgba(254, 181, 24, 0.3);
+}
+
 /*------------------------- Responsive ---------------------------*/
 @media (max-width: 576px) {
   .topheader {
@@ -396,11 +509,17 @@
   .slide-home .carousel-inner .carousel-item .textSlide {
     display: none;
   }
-  .service .title h2 {
+  .service-home {
+    margin-top: 60px;
+  }
+  .service-home .title h2 {
     font-size: 32px;
   }
-  .service .title p {
+  .service-home .title p {
     font-size: 22px;
+  }
+  .menu-home {
+    margin-top: 60px;
   }
   .menu-home .menu-option .title-menu {
     height: 300px;
@@ -465,6 +584,40 @@
   .menu-home .menu-item .menu-item-content .one-food .row .col-9.col-sm-10 .food-content .food-content-bottom {
     font-size: 14px;
     margin-top: 0;
+  }
+  .slide-list-menu {
+    margin-top: 60px;
+  }
+  .slide-list-menu .background-black .col-sm-12 h4 {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  .slide-list-menu .background-black .carousel.slide {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-indicators {
+    display: none;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product {
+    padding: 0 5px;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product {
+    font-size: 12px;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product .name-product {
+    text-align: center;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .title-product span {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .slide-list-menu .background-black .carousel.slide .carousel-inner .carousel-item .product .description-product {
+    font-size: 9px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=custom.css.map */
