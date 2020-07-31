@@ -395,7 +395,7 @@
 .slide-list-menu {
   position: relative;
   margin-top: 110px;
-  background-image: url(/images/background-slide-menu-hone.jpg);
+  background-image: url(../images/background-slide-menu-hone.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
