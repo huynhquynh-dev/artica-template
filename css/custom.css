@@ -395,7 +395,7 @@
 .slide-list-menu {
   position: relative;
   margin-top: 110px;
-  background-image: url(../images/background-slide-menu-hone.jpg);
+  background-image: url(/images/background-slide-menu-hone.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -582,7 +582,7 @@
   background-color: #333333;
 }
 
-/*------------------------- Slogan ---------------------------*/
+/*------------------------- Slogan Home ---------------------------*/
 .slogan-home {
   position: relative;
   width: 100%;
@@ -622,6 +622,99 @@
   font-family: "Roboto Slab", sans-serif;
   font-size: 36px;
   color: white;
+}
+
+/*------------------------- Order Home ---------------------------*/
+.order-home {
+  font-family: "Roboto Slab", sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.order-home .info-order {
+  font-size: 15px;
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.order-home .info-order h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.order-home .info-order p {
+  position: relative;
+  color: #777777;
+  max-width: 570px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  line-height: 1.8rem;
+}
+
+.order-home .info-order p span {
+  color: #feb518;
+}
+
+.order-home .info-order p:last-child {
+  margin-bottom: 0;
+}
+
+.order-home .info-order h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.order-home .form-order h4 {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.order-home .form-order .input-order {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.order-home .form-order .input-order .form-control {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  border-radius: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.order-home .form-order .button-order {
+  border-radius: 0;
+  padding: 10px 51px;
+  line-height: 26px;
+  background-color: #feb518;
+  color: #333333 !important;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.order-home .form-order .button-order:hover {
+  background: none;
+  border-color: #feb518;
+  color: #feb518 !important;
 }
 
 /*------------------------- Responsive ---------------------------*/
@@ -767,6 +860,9 @@
     font-size: 9px;
     text-align: center;
   }
+  .about-chef-home {
+    margin-bottom: 30px;
+  }
   .about-chef-home .info-chef {
     margin-top: 40px;
   }
@@ -776,6 +872,18 @@
   .slogan-home .col-12 h4 {
     font-size: 20px;
     margin-top: 10px;
+  }
+  .order-home .info-order h3 {
+    font-size: 22px;
+  }
+  .order-home .info-order p {
+    font-size: 14px;
+  }
+  .order-home .info-order h4 {
+    font-size: 21px;
+  }
+  .order-home .form-order h4 {
+    font-size: 21px;
   }
 }
 /*# sourceMappingURL=custom.css.map */

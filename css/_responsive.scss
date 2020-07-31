@@ -205,6 +205,8 @@
     }
 
     .about-chef-home {
+        margin-bottom: 30px;
+
         .info-chef {
             margin-top: 40px;
         }
@@ -220,5 +222,24 @@
                 margin-top: 10px;
             }
         }    
+    }
+
+    .order-home {
+        .info-order {
+            h3 {
+                font-size: 22px;
+            }
+            p {            
+                font-size: 14px;
+            }
+            h4 {
+                font-size: 21px;
+            }
+        }
+        .form-order {
+            h4 {
+                font-size: 21px;
+            }
+        }
     }
 }

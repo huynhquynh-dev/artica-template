@@ -14,6 +14,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap"
 		rel="stylesheet">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<link rel="stylesheet" href="./vendor/animate.css" />
+	<script src="./vendor/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/custom.css">
@@ -46,7 +53,7 @@
 	<section class="header">
 		<div class="container">
 			<nav class="navbar navbar-expand-md navbar-light">
-				<a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+				<a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" class="wow animate__swing"></a>
 				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
 					data-target="#headerMenuId" aria-controls="headerMenuId" aria-expanded="false"
 					aria-label="Toggle navigation">
@@ -156,7 +163,7 @@
 				</div>
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="./images/services-1.png" alt="">
+						<img class="card-img-top wow animate__zoomIn" data-wow-delay="1s" src="./images/services-1.png" alt="">
 						<div class="card-body">
 							<a href="#">
 								<h4 class="card-title">Pan Pizza</h4>
@@ -167,7 +174,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="card-img-top" src="./images/services-2.png" alt="">
+						<img class="card-img-top wow animate__zoomIn" data-wow-delay="1s" src="./images/services-2.png" alt="">
 						<div class="card-body">
 							<a href="#">
 								<h4 class="card-title">Burger</h4>
@@ -178,7 +185,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="card-img-top" src="./images/services-3.png" alt="">
+						<img class="card-img-top wow animate__zoomIn" data-wow-delay="1s" src="./images/services-3.png" alt="">
 						<div class="card-body">
 							<a href="#">
 								<h4 class="card-title">Fish</h4>
@@ -197,7 +204,7 @@
 	<!-- Begin Menu Home -->
 	<section class="menu-home">
 		<div class="menu-option">
-			<div class="title-menu text-center">
+			<div class="title-menu text-center wow animate__slideInLeft" data-wow-delay="1.5s">
 				<div class="container">
 					<div class="row justify-content-sm-center">
 						<div class="col-sm-6 title-item">
@@ -219,7 +226,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="menu-item-content">
+			<div class="menu-item-content wow animate__fadeInUp" data-wow-delay="1s">
 				<div class="container">
 					<div class="row group-menu-home">
 						<!-- One Food -->
@@ -486,7 +493,7 @@
 							<li data-target="#slideMenuId" data-slide-to="1"></li>
 							<li data-target="#slideMenuId" data-slide-to="2"></li>
 						</ol>
-						<div class="carousel-inner" role="listbox">
+						<div class="carousel-inner wow animate__fadeInUp" data-wow-delay="1s" role="listbox">
 							<div class="carousel-item active">
 								<div class="row">
 									<!-- One product -->
@@ -669,10 +676,10 @@
 	<section class="about-chef-home">
 		<div class="container">
 			<div class="row clearfix">
-				<div class="col-12 col-sm-6 pull-right">
+				<div class="col-12 col-sm-6 pull-right wow animate__slideInLeft" data-wow-delay="0.5s">
 					<img src="./images/master-chef.png" alt="image-chef">
 				</div>
-				<div class="col-12 col-sm-6 pull-left">
+				<div class="col-12 col-sm-6 pull-left wow animate__slideInRight" data-wow-delay="1s">
 					<div class="info-chef">
 						<div class="info-chef-title">
 							<h2 class="title-chef">Stevan Smith</h2>
@@ -695,20 +702,93 @@
 	</section>
 	<!-- End About Chef -->
 
-	<!-- Begin  About Chef-->
-	<!-- End About Chef -->
+	<!-- Begin  Slogan-->
 	<div class="slogan-home">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
+			<div class="row ">
+				<div class="col-12 wow animate__slideInUp" data-wow-delay="1s">
 					<span>Enjoy Pleasant Pastime With Friends and Partners</span>
 					<h4>Relaxing Atmosphere</h4>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Begin  About Chef-->
-	<!-- End About Chef -->
+	<!-- End Slogan -->
+
+	<!-- Begin Order Home-->
+	<div class="order-home">
+		<div class="container">
+			<div class="row clearfix justify-content-center">
+				<div class="col-10">
+					<div class="info-order">
+						<h3>Make A Reservation</h3>
+						<p>
+							Booking a table has never been so easy with free & instant online restaurant reservations,
+							booking now!!
+						</p>
+						<p>
+							Monday to Friday
+							<span>9:00 am - 23:00 pm </span> </br>
+							Saturday to Sunday
+							<span>10:00 am - 22:00 pm.</span> </br>
+							Note: Arctica Restaurant is closed on holidays.
+						</p>
+						<h4>0844.335.1211</h4>
+					</div>
+					<div class="form-order">
+						<form>
+							<div class="row justify-content-center wow animate__fadeInUp" data-wow-delay="0.5s">
+								<div class="col-12">
+									<h4>Book Your Table Online</h4>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="name" id="name"
+											placeholder="Yorn Name *">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="email" id="email"
+											placeholder="Yorn Email *">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="mobile" id="mobile"
+											placeholder="Mobile Number *">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="date-order" id="date-order"
+											placeholder="Date Order *">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="time-order" id="time-order"
+											placeholder="Time *">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4">
+									<div class="form-group input-order">
+										<input type="text" class="form-control" name="noofpersons" id="noofpersons"
+											placeholder="No. of Persons *">
+									</div>
+								</div>
+								<button type="submit" class="btn btn-warning button-order">Book Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Order Home -->
+
+	<!-- Begin Order Home-->
+	<!-- End Order Home -->
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
